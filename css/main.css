@@ -77,10 +77,9 @@ header nav {
 }
 
 header nav ul {
-	/*margin: 0;*/
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 }
 
@@ -88,14 +87,20 @@ header nav ul li {
 	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 10px 0px;
-	width: 100%;
+	padding: 10px 15px;
+	width: auto;
+	display: inline-block;
 
 }
 
 header nav ul li a {
 	text-decoration: none;
 	color: #45610E;
+}
+
+header nav ul li a:hover {
+    color: #228B22; /* Example hover color */
+    text-decoration: underline;
 }
 
 /********  MAIN STYLES ********/
@@ -180,6 +185,7 @@ footer span {
 @media all and (min-width: 768px) {
 
 	/* Tablet styles here */
+
 	.bottom-section .content-wrapper {
 		justify-content: space-evenly;
 	}
